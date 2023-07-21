@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.routing-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  
+    padding: 20px 0;
+  
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__image {
+    width: 200px;
+    height: auto;
+
+    display: none;
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+    color: $color-green;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__image {
+      display: block;
+    }
+  }
+}

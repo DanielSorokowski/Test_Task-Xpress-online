@@ -1,0 +1,38 @@
+@import '_variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: grid;
+  
+  &__box {
+    margin: 0 25px;
+  }
+
+  @media (min-width: 768px) {
+    &__box {
+      margin: 0 50px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__box {
+      margin: 0 100px;
+    }
+  }
+
+  @media (min-width: 1930px) {
+    &__box {
+      margin: 0 auto;
+      width: 1920px;
+    }
+  }
+}

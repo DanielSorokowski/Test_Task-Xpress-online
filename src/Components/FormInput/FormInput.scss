@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.form-input {
+  display: grid;
+
+  &__input {
+    background: #F0F0F0;
+    border: solid 1px $color-green;
+    padding: 3px;
+  }
+
+  @media(min-width: 786px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

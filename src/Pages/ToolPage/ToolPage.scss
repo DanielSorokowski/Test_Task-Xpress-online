@@ -1,0 +1,14 @@
+.tool-page {
+  display: grid;
+  gap: 25px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr
+  }
+
+  &__tools {
+    display: grid;
+    align-self: flex-start;
+    gap: 25px;
+  }
+}

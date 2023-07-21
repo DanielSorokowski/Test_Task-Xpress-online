@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.page-header {
+  &__title {
+    color: $color-green;
+    font-size: 28px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+  }
+}

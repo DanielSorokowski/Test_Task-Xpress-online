@@ -1,0 +1,9 @@
+.form-group {
+  display: grid;
+  gap: 10px;
+  align-items: flex-start;
+  &__list {
+    display: grid;
+    gap: 5px;
+  }
+}

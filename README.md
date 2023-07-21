@@ -15,4 +15,4 @@ Landing Page of an sorting tools app
 - React Router
 
 ## 🚀 Deployment <a name="demo"></a>
-The site has been deployed using Github pages can be previewed at this [DEMO LINK](https://danielsorokowski.github.io/unlimitech-landing-page/) 
+The site has been deployed using Github pages can be previewed at this [DEMO LINK](https://danielsorokowski.github.io/test_task-xpress-online/) 

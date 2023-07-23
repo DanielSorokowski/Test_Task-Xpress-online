@@ -54,7 +54,7 @@ export const Card = ({
       </div>
       <div className='card__bottom'>
         <h3 className='card__title'>{title}</h3>
-        <button className='card__btn '  onClick={() => handleSelect(id)}>Define Tool</button>
+        <button className='card__btn '  onClick={() => handleSelect(id)}>{isFav ? 'Define Tool' : 'Select'}</button>
       </div>
     </div>
     {isModal && <CardModal image={image} handleClose={setIsModal}/>}

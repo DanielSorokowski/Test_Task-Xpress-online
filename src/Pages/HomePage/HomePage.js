@@ -2,6 +2,7 @@ import './HomePage.scss'
 import { DetailCard } from "../../Components/DetailCard/DetailCard"
 import { PageHeader } from '../../Components/PageHeader/PageHeader'
 import { feachers } from "../../products"
+import { ImageMagnifier } from '../../Components/ImageMagnifier/ImageMagnifier'
 
 export const HomePage = () => {
   return (

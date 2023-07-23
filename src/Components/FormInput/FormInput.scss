@@ -10,6 +10,7 @@
   }
 
   @media(min-width: 786px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
   }
 }

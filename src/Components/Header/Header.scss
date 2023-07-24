@@ -64,10 +64,10 @@
 
   &__nav {
     justify-self: flex-start;
-    
 
     @media (min-width: 786px) {
       justify-self: flex-end;
+      grid-column: 4 / 5;
     }
   }
 }

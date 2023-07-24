@@ -1,9 +1,20 @@
 import './Header.scss'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export const Header = ({isHome}) => {
   const navigate = useNavigate();
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/search/${searchValue}`);
+  };
+
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
 
   return (
     <header className="header">
@@ -19,6 +30,9 @@ export const Header = ({isHome}) => {
         <Link to='/' className='header__link'>
           <h1 className="header__title">Xpress Online</h1>
         </Link>
+        <form onSubmit={handleFormSubmit} className='header__form'>
+          <input type='text' value={searchValue} onChange={handleInputChange} placeholder='Search for tools' className='header__search'></input>
+        </form>
         <nav className='header__nav nav'>
           <ul className='nav__list'>
             <li className='nav__element'>

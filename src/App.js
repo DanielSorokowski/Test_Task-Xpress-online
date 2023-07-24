@@ -8,6 +8,7 @@ import { ProductsPage } from './Pages/ProductsPage/ProductsPage';
 import { Routes, Route, useLocation} from 'react-router-dom';
 import { ToolPage } from './Pages/ToolPage/ToolPage';
 import { FavoritePage } from './Pages/FavoritePage/FavoritePage';
+import { SearchPage } from './Pages/SearchPage/SearchPage';
 
 import { createContext, useEffect, useState } from 'react';
 
@@ -35,6 +36,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/favorites" element={<FavoritePage />} />
+            <Route path="/search/:value" element={<SearchPage />} />
             <Route path="/new-special-tool" element={<ProductsPage />} />
             <Route path="/new-special-tool/tool" element={<ToolPage />} />
           </Routes>
